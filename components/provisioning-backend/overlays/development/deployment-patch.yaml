@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: provisioning-backend
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-hms-tenant/provisioning-backend/provisioning-backend@sha256:8e0c324aeab56f6c700fd4f996146adeb8cd344782a1235b48661080b3c112f8
+        name: container-image
+        resources: {}
+status: {}
